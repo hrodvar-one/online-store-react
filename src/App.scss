@@ -1,0 +1,231 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+
+  .header {
+
+    li {
+      font-size: 14px;
+      padding-top: 7px;
+    }
+
+    .header-topmenu {
+      width: 100%;
+      height: 33px;
+      color: rgb(255, 255, 255);
+      background: rgb(252, 133, 7);
+
+      .header-topmenu-container {
+        height: 33px;
+        display: flex;
+        margin: 0 352px;
+
+        .header-topmenu-common-list {
+          display: flex;
+          width: 933px;
+          list-style-type: none;
+
+          .header-topmenu-common-list-item {
+            display: inline;
+            list-style-type: none;
+
+            .select-city-widget {
+              width: 285px;
+
+              .select-city-widget-label {
+                display: flex;
+              }
+            }
+          }
+        }
+
+        .header-topmenu-profile-list {
+          display: flex;
+
+          .header-topmenu-profile-list-item {
+            display: inline;
+            list-style-type: none;
+            font-weight: 700;
+            font-size: 14px;
+
+            .header-topmenu-profile-list-item-span-phone {
+
+            }
+
+            @media (min-width: 992px) {
+              .header-topmenu-profile-list-item-span-phone:before {
+                margin-right: 2px;
+              }
+            }
+
+            @media (min-width: 992px) {
+              .header-topmenu-profile-list-item-span-phone:before {
+                content: "";
+                //content: "\e92f";
+              }
+            }
+
+            @media (min-width: 992px) {
+              .header-topmenu-profile-list-item-span-phone:before {
+                //speak: none;
+                display: inline-block;
+                //font-family: i-icon!important;
+                font-style: normal;
+                font-variant: normal;
+                font-weight: 400;
+                line-height: 1;
+                text-transform: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .header-search {
+      box-sizing: content-box;
+      height: 64px;
+      top: -52.8px;
+      z-index: 1000;
+      //background: rgb(255, 255, 255);
+      background: rgb(143, 137, 137);
+      transition: background 0.2s ease-out 0s;
+    }
+  }
+
+  .container {
+    background-color: coral;
+    box-sizing: content-box;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 75%;
+
+    .homepage-top-grid {
+      width: 1180px;
+      height: 720px;
+      margin-bottom: 48px;
+      background-color: cadetblue;
+
+      .homepage-top-grid-menu {
+        width: 280px;
+        height: 720px;
+        background-color: brown;
+      }
+
+      @media (min-width: 1200px) {
+        .homepage-top-grid-menu {
+          display: flex;
+          flex-basis: 280px;
+          flex-grow: 0;
+          flex-shrink: 0;
+          max-width: 280px;
+        }
+      }
+
+      .homepage-top-grid-center {
+        width: 880px;
+        height: 720px;
+        background-color: blueviolet;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .homepage-top-grid {
+        margin-bottom: 48px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .homepage-top-grid {
+        min-height: 680px;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .homepage-top-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+
+    .homepage-stories-desktop {
+      width: 1180px;
+      height: 283px;
+      margin-bottom: 48px;
+      background-color: blue;
+
+      .homepage-stories {
+        width: 100%;
+      }
+    }
+
+    .homepage-actual-offers-category-block {
+      width: 1180px;
+      height: 519px;
+      margin-bottom: 48px;
+      background-color: darkslateblue;
+    }
+
+    .homepage-benefits {
+      width: 1180px;
+      height: 190px;
+      margin-bottom: 48px;
+      background-color: cornflowerblue;
+    }
+
+    .viewed-products-slider {
+      width: 1180px;
+      height: 455px;
+      margin-bottom: 48px;
+      background-color: chartreuse;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1180px;
+      padding: 0 10px;
+    }
+  }
+
+  .main-footer {
+    width: 100%;
+    //width: 1546px;
+    height: 560px;
+    margin-top: 30px;
+    background: rgb(51, 51, 51);
+  }
+}
