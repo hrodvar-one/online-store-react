@@ -1,7 +1,8 @@
 import './App.scss';
 import React from "react";
 import HeaderTopMenuCommonListLi from "./components/header/li/HeaderTopMenuCommonListLi";
-import HeaderTopMenuCommonListLiTest from "./components/header/li-test/HeaderTopMenuCommonListLiTest";
+import HeaderTopMenuCommonListItemDropdownLinkChild
+	from "./components/header/a/HeaderTopMenuCommonListItemDropdownLinkChild";
 
 function App() {
 	return (
@@ -21,10 +22,19 @@ function App() {
 									</div>
 								</div>
 							</li>
-							<HeaderTopMenuCommonListLi/>
-							<HeaderTopMenuCommonListLiTest name="Еда"/>
-							<HeaderTopMenuCommonListLi/>
-							<HeaderTopMenuCommonListLi/>
+							<HeaderTopMenuCommonListLi name="Магазины"/>
+							<li className="header-topmenu-common-list-item-dropdown">
+								<a className="header-topmenu-common-link" href="/shops/omsk/">Покупателям</a>
+								<span className="header-top-menu-dropdown-icon">
+								</span>
+								<ul className="header-topmenu-common-list-item-dropdown-childs">
+									<HeaderTopMenuCommonListItemDropdownLinkChild name="Как оформить заказ"/>
+									<HeaderTopMenuCommonListItemDropdownLinkChild name="Доставка"/>
+									<HeaderTopMenuCommonListItemDropdownLinkChild name="Способы оплаты"/>
+								</ul>
+							</li>
+							<HeaderTopMenuCommonListLi name="Юридическим лицам"/>
+							<HeaderTopMenuCommonListLi name="Клуб BNS"/>
 						</ul>
 						<ul className="header-topmenu-profile-list">
 							<li className="header-topmenu-profile-list-item">
