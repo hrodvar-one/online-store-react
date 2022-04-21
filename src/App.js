@@ -1,8 +1,14 @@
 import './App.scss';
 import React from "react";
 import HeaderTopMenuCommonListLi from "./components/header/li/HeaderTopMenuCommonListLi";
-import HeaderTopMenuCommonListItemDropdownLinkChild
-	from "./components/header/a/HeaderTopMenuCommonListItemDropdownLinkChild";
+import HeaderTopMenuCommonListItemDropdownLinkChild from "./components/header/a/HeaderTopMenuCommonListItemDropdownLinkChild";
+
+function onOffDropdownList() {
+	// if ()
+	// return (
+	// 	<div className={}
+	// )
+}
 
 function App() {
 	return (
@@ -24,13 +30,18 @@ function App() {
 							</li>
 							<HeaderTopMenuCommonListLi name="Магазины"/>
 							<li className="header-topmenu-common-list-item-dropdown">
-								<a className="header-topmenu-common-link" href="/shops/omsk/">Покупателям</a>
-								<span className="header-top-menu-dropdown-icon">
-								</span>
+								<a className="header-topmenu-common-link" href="/shops/omsk/" onClick={onOffDropdownList}>Покупателям</a>
+								<span className="header-top-menu-dropdown-icon"/>
 								<ul className="header-topmenu-common-list-item-dropdown-childs">
 									<HeaderTopMenuCommonListItemDropdownLinkChild name="Как оформить заказ"/>
 									<HeaderTopMenuCommonListItemDropdownLinkChild name="Доставка"/>
 									<HeaderTopMenuCommonListItemDropdownLinkChild name="Способы оплаты"/>
+									<HeaderTopMenuCommonListItemDropdownLinkChild name="Бонусная программа"/>
+									<HeaderTopMenuCommonListItemDropdownLinkChild name="Узнать статус заказа"/>
+									<HeaderTopMenuCommonListItemDropdownLinkChild name="Обмен, возврат, гарантия"/>
+									<HeaderTopMenuCommonListItemDropdownLinkChild name="Кредиты"/>
+									<HeaderTopMenuCommonListItemDropdownLinkChild name="Сервисные центры"/>
+									<HeaderTopMenuCommonListItemDropdownLinkChild name="Политика конфиденциальности"/>
 								</ul>
 							</li>
 							<HeaderTopMenuCommonListLi name="Юридическим лицам"/>
