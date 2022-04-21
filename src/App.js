@@ -1,16 +1,20 @@
 import './App.scss';
-import React from "react";
+import React, {useState} from "react";
 import HeaderTopMenuCommonListLi from "./components/header/li/HeaderTopMenuCommonListLi";
 import HeaderTopMenuCommonListItemDropdownLinkChild from "./components/header/a/HeaderTopMenuCommonListItemDropdownLinkChild";
 
-function onOffDropdownList() {
-	// if ()
-	// return (
-	// 	<div className={}
-	// )
-}
-
 function App() {
+
+	// const state = useState(0)
+	const [count, setCount] = useState(0)
+
+	function onOffDropdownList() {
+
+	}
+
+	console.log(count)
+	console.log(setCount)
+
 	return (
 		<div className="App">
 			<header className="header">
