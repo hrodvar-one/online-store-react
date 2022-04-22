@@ -1,19 +1,10 @@
 import './App.scss';
-import React, {useState} from "react";
+import React from "react";
 import HeaderTopMenuCommonListLi from "./components/header/li/HeaderTopMenuCommonListLi";
 import HeaderTopMenuCommonListItemDropdownLinkChild from "./components/header/a/HeaderTopMenuCommonListItemDropdownLinkChild";
 
 function App() {
 
-	// const state = useState(0)
-	const [count, setCount] = useState(0)
-
-	function onOffDropdownList() {
-
-	}
-
-	console.log(count)
-	console.log(setCount)
 
 	return (
 		<div className="App">
@@ -34,7 +25,7 @@ function App() {
 							</li>
 							<HeaderTopMenuCommonListLi name="Магазины"/>
 							<li className="header-topmenu-common-list-item-dropdown">
-								<a className="header-topmenu-common-link" href="/shops/omsk/" onClick={onOffDropdownList}>Покупателям</a>
+								<a className="header-topmenu-common-link" href="/shops/omsk/">Покупателям</a>
 								<span className="header-top-menu-dropdown-icon"/>
 								<ul className="header-topmenu-common-list-item-dropdown-childs">
 									<HeaderTopMenuCommonListItemDropdownLinkChild name="Как оформить заказ"/>
