@@ -64,6 +64,10 @@ dd {
 
               .select-city-widget-label {
                 display: flex;
+
+                p {
+                  cursor: pointer;
+                }
               }
             }
           }
@@ -104,6 +108,7 @@ dd {
                 left: calc(50% - 15px);
                 position: absolute;
                 top: -20px;
+                cursor: pointer;
               }
             }
           }
