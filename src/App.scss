@@ -79,14 +79,16 @@ dd {
             }
 
             .header-topmenu-common-link {
-              text-decoration: none;
+              //text-decoration: none;
+              cursor: pointer;
               color: rgb(255, 255, 255);
               padding: 0 0 0 15px;
             }
 
             .header-topmenu-common-list-item-dropdown-childs {
-              //display: none;
+              display: none;
               //display: block;
+              //visibility: hidden;
               position: absolute;
               left: 670px;
               margin-top: 5px;
@@ -276,6 +278,6 @@ dd {
   }
 }
 
-.hidden {
-  display: none;
-}
+//.hidden {
+//  display: none;
+//}
