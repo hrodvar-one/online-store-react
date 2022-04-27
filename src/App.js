@@ -1,8 +1,9 @@
 import './App.scss';
 import React from "react";
 import HeaderTopMenuCommonListLi from "./components/header/li/HeaderTopMenuCommonListLi/HeaderTopMenuCommonListLi";
-import HeaderTopMenuCommonListItemDropdown
-	from "./components/header/li/HeaderTopMenuCommonListItemDropdown/HeaderTopMenuCommonListItemDropdown";
+// import HeaderTopMenuCommonListItemDropdown
+// 	from "./components/header/li/HeaderTopMenuCommonListItemDropdown/HeaderTopMenuCommonListItemDropdown";
+import DropdownLink from "./components/header/DropdownLink/DropdownLink";
 
 function App() {
 
@@ -24,7 +25,8 @@ function App() {
 								</div>
 							</li>
 							<HeaderTopMenuCommonListLi name="Магазины"/>
-							<HeaderTopMenuCommonListItemDropdown />
+							<DropdownLink/>
+							{/*<HeaderTopMenuCommonListItemDropdown />*/}
 							<HeaderTopMenuCommonListLi name="Юридическим лицам"/>
 							<HeaderTopMenuCommonListLi name="Клуб BNS"/>
 						</ul>

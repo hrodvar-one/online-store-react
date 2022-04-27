@@ -12,8 +12,8 @@ const HeaderTopMenuCommonListItemDropdown = () => {
 	}
 
 	return (
-		<li className="header-topmenu-common-list-item-dropdown">
-			<span className="header-topmenu-common-link" onClick={onOffHeaderDropdownMenu}>Покупателям</span>
+		<li className="header-topmenu-common-list-item-dropdown" onClick={onOffHeaderDropdownMenu}>
+			<span className="header-topmenu-common-link">Покупателям</span>
 			<span className="header-top-menu-dropdown-icon"/>
 			<ul className="header-topmenu-common-list-item-dropdown-childs" id="header-topmenu-common-list-item-dropdown-childs" style={{display: 'none'}}>
 				<HeaderTopMenuCommonListItemDropdownLinkChild name="Как оформить заказ"/>
