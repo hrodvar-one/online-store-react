@@ -6,7 +6,6 @@ import HeaderTopMenuCommonListLi from "./components/header/li/HeaderTopMenuCommo
 import DropdownLink from "./components/header/DropdownLink/DropdownLink";
 
 function App() {
-
 	return (
 		<div className="App">
 			<header className="header">

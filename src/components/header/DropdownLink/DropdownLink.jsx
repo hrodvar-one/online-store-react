@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import onClickOutside from "react-onclickoutside";
 import DropdownList from "../DropdownList/DropdownList";
 
-const DropdownLink = (props) => {
+function DropdownLink (props) {
 	const [showDropdown, setShowDropdown] = useState(false);
 
 	DropdownLink.handleClickOutside = () => {
