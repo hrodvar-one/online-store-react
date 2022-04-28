@@ -7,6 +7,9 @@
         text-decoration: none;
         color: rgba(255, 255, 255, 1);
         height: 32px;
+        &:hover {
+            color: rgb(252, 203, 121);
+        }
     }
 }
 
