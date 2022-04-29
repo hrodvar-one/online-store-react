@@ -108,17 +108,11 @@ dd {
             }
 
             .header-topmenu-common-list-item-dropdown-childs {
-              //display: none;
-              //display: block;
-              //visibility: hidden;
               position: absolute;
               left: 670px;
               margin-top: 5px;
               border: 1px #b9b9b9 solid;
               border-radius: 3px;
-              //&:hover {
-              //  color: rgb(252, 203, 121);
-              //}
 
               &:after {
                 //display: none;
@@ -171,9 +165,7 @@ dd {
 
             @media (min-width: 992px) {
               .header-topmenu-profile-list-item-span-phone:before {
-                //speak: none;
                 display: inline-block;
-                //font-family: i-icon!important;
                 font-style: normal;
                 font-variant: normal;
                 font-weight: 400;
@@ -193,9 +185,6 @@ dd {
       top: -52.8px;
       z-index: 1000;
       transition: background 0.2s ease-out 0s;
-      //border: 2px black solid;
-      //box-shadow: 0 10px 15px rgba(98, 97, 97, 0.2);
-      //box-shadow: rgba(0, 0, 0, 0.14) 0 1px 24px 0;
 
       .header-search-container {
         height: 64px;
@@ -204,8 +193,8 @@ dd {
 
         .header-menu-wrapped {
           display: flex;
-          flex-flow: row;
           white-space: nowrap;
+          flex-flow: row;
 
           .logo-container {
             box-sizing: content-box;
@@ -218,24 +207,26 @@ dd {
             .logo {
               display: inline-block;
               height: 64px;
+              width: 120px;
             }
 
             @media (min-width: 992px) {
               .logo {
-                background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='120' height='31' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M31.295 15.084a7.529 7.529 0 0 0-2.22-5.358 7.529 7.529 0 0 0-5.358-2.22H7.507V22.662h16.21a7.53 7.53 0 0 0 5.359-2.22 7.527 7.527 0 0 0 2.219-5.357Zm7.507 0c0 8.33-6.754 15.084-15.085 15.084H0V0h23.717c8.331 0 15.085 6.753 15.085 15.084Zm78.444-.985a9.378 9.378 0 0 0-6.649-2.754v.012H90.639a1.936 1.936 0 0 1-1.934-1.934c0-1.066.867-1.934 1.934-1.934h23.655a3.736 3.736 0 1 0 0-7.472H90.639c-1.268 0-2.5.25-3.663.741a9.368 9.368 0 0 0-2.988 2.014 9.375 9.375 0 0 0-2.014 2.989 9.351 9.351 0 0 0-.741 3.662c0 1.268.25 2.5.741 3.662a9.366 9.366 0 0 0 2.014 2.989 9.374 9.374 0 0 0 6.651 2.755h19.958v-.012c1.065 0 1.931.866 1.931 1.93a1.933 1.933 0 0 1-1.931 1.932H84.969a3.736 3.736 0 1 0 0 7.472h25.628a9.376 9.376 0 0 0 6.649-2.754 9.37 9.37 0 0 0 2.013-2.988 9.336 9.336 0 0 0 .741-3.661 9.375 9.375 0 0 0-2.754-6.649ZM71.876 0h7.472v26.415a3.736 3.736 0 0 1-6.378 2.641l-24.917-18.01v19.122H40.58V3.753a3.736 3.736 0 0 1 6.378-2.641l24.917 18.01V0Z' fill='%23FC8507'/%3E%3C/svg%3E");
-                background-position-x: 0;
-                background-position-y: center;
-                background-size: initial;
-                background-attachment: initial;
-                background-origin: initial;
-                background-clip: initial;
-                background-color: initial;
-                transition-property: all;
-                transition-duration: 0.3s;
-                transition-timing-function: ease-in;
-                transition-delay: 0s;
                 vertical-align: middle;
                 width: 120px;
+                background: url("./icons/bns.svg") 0 center no-repeat;
+                transition: all 0.3s ease-in 0s;
+              }
+            }
+
+            .catalog-spoiler {
+              left: -9999px;
+              opacity: 0;
+              position: absolute;
+              overflow: hidden;
+
+              i {
+                font-style: italic;
               }
             }
           }
@@ -246,12 +237,82 @@ dd {
               vertical-align: top;
             }
           }
+
+          .presearch {
+            box-sizing: border-box;
+            display: inline-block;
+            height: 64px;
+            width: 100%;
+            padding: 12px 20px;
+
+            .ui-input-search-presearch-container {
+              font-size: 16px;
+              height: auto;
+              position: relative;
+
+              .ui-input-search-presearch {
+                box-sizing: border-box;
+                padding-right: 80px;
+                color: rgb(51, 51, 51);
+                height: 34px;
+                width: 100%;
+                background: rgb(242, 242, 242);
+                border-width: initial;
+                border-style: none;
+                border-color: initial;
+                border-image: initial;
+                border-radius: 8px;
+                outline: none;
+                transition: background 0.3s ease 0s;
+              }
+
+              input[type="search"] {
+                appearance: none;
+              }
+
+              .presearch-suggests-hidden {
+                display: none;
+              }
+
+              .ui-input-search-buttons {
+
+              }
+            }
+          }
+
+          .buttons {
+            padding: 18px 0;
+          }
+
+          @media (min-width: 768px) {
+            .buttons {
+              background-color: transparent;
+              box-sizing: border-box;
+              float: none;
+              text-align: left;
+              white-space: nowrap;
+              margin: 0;
+              display: inline-block;
+              vertical-align: top;
+            }
+          }
+
+          @media (min-width: 1200px) {
+            height: 64px;
+            width: calc(100% - 856px);
+          }
+
+          .header-login {
+            margin: 0 0 0 20px;
+            padding: 12px 0 0;
+          }
         }
       }
 
       @media (min-width: 1200px) {
         .header-search-container {
-          max-width: 1180px;
+          //max-width: 1180px;
+          max-width: 1200px;
           padding: 0 10px;
         }
       }

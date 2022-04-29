@@ -42,15 +42,15 @@ function App() {
 					<div className="header-search-container">
 						<div className="header-menu-wrapper">
 							<div className="logo-container">
-								<a id="header-logo" className="logo" href="/"></a>
+								<a id="header-logo" className="logo" href="/"> </a>
 								<span className="catalog-spoiler">
 									<i className="chevron"></i>
 								</span>
 							</div>
 							<form id="" action="/search" method="get" className="presearch" data-role="presearch-form">
-								<div className="ui-input-search-ui-input-search-presearch">
-									<input className="ui-input-search-input-ui-input-search-input-presearch" name="q" value type="search" placeholder="Поиск по сайту" autocomplete="off"/>
-									<div className="presearch-suggests presearch-suggests-hidden"></div>
+								<div className="ui-input-search-presearch-container">
+									<input className="ui-input-search-presearch" name="q" value type="search" placeholder="Поиск по сайту"/>
+									<div className="presearch-suggests-hidden"></div>
 									<div className="ui-input-search-buttons">
 										<span className=""></span>
 										<span className="ui-input-search-icon-ui-input-search"></span>
