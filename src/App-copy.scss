@@ -187,40 +187,138 @@ dd {
       transition: background 0.2s ease-out 0s;
 
       .header-search-container {
-        width: 1200px;
         height: 64px;
         position: relative;
         margin: 0 342px;
-        padding: 0 10px;
-        display: inline-block;
 
-        .logo-container {
-          width: 120px;
-          height: 64px;
-          //background-color: yellow;
-          //background: url(icons/bns.svg) no-repeat;
+        .header-menu-wrapped {
+          display: flex;
+          white-space: nowrap;
+          flex-flow: row;
 
-          .logo {
-            display: inline-block;
-            height: 64px;
-          }
+          .logo-container {
+            box-sizing: content-box;
+            float: left;
+            max-height: 64px;
+            max-width: 280px;
+            padding-bottom: 0;
+            text-align: left;
 
-          @media (min-width: 992px) {
             .logo {
-              vertical-align: middle;
+              display: inline-block;
+              height: 64px;
               width: 120px;
-              background: url(icons/bns.svg) 0 center no-repeat;
-              transition: all 0.3s ease-in 0s;
+              background: darkslateblue;
+            }
+
+            @media (min-width: 992px) {
+              .logo {
+                vertical-align: middle;
+                width: 120px;
+                //background: url("./icons/bns.svg") 0 center no-repeat;
+                background: yellow;
+                transition: all 0.3s ease-in 0s;
+              }
+            }
+
+            .catalog-spoiler {
+              left: -9999px;
+              opacity: 0;
+              position: absolute;
+              overflow: hidden;
+
+              i {
+                font-style: italic;
+              }
             }
           }
-        }
 
-        .presearch {
-          box-sizing: border-box;
-          height: 64px;
-          width: 100%;
-          padding: 12px 20px;
-          background-color: yellow;
+          @media (min-width: 768px) {
+            .logo-container {
+              display: inline-block;
+              vertical-align: top;
+            }
+          }
+
+          .presearch {
+            box-sizing: border-box;
+            display: inline-block;
+            height: 64px;
+            width: 100%;
+            //width: 666px;
+            padding: 12px 20px;
+
+            .ui-input-search-presearch-container {
+              font-size: 16px;
+              height: auto;
+              position: relative;
+
+              .ui-input-search-presearch {
+                box-sizing: border-box;
+                padding-right: 80px;
+                color: rgb(51, 51, 51);
+                height: 34px;
+                width: 100%;
+                background: rgb(242, 242, 242);
+                border-width: initial;
+                border-style: none;
+                border-color: initial;
+                border-image: initial;
+                border-radius: 8px;
+                outline: none;
+                transition: background 0.3s ease 0s;
+              }
+
+              input[type="search"] {
+                appearance: none;
+              }
+
+              .presearch-suggests-hidden {
+                display: none;
+              }
+
+              .ui-input-search-buttons {
+
+              }
+            }
+          }
+
+          .buttons {
+            padding: 18px 0;
+          }
+
+          @media (min-width: 768px) {
+            .buttons {
+              background-color: transparent;
+              box-sizing: border-box;
+              float: none;
+              text-align: left;
+              white-space: nowrap;
+              margin: 0;
+              display: inline-block;
+              vertical-align: top;
+            }
+          }
+
+          @media (min-width: 1200px) {
+            .buttons {
+              height: 64px;
+              width: calc(100% - 856px);
+            }
+          }
+
+          .header-login {
+            margin: 0 0 0 20px;
+            padding: 12px 0 0;
+          }
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .header-search-container {
+          //max-width: 1180px;
+          max-width: 1200px;
+          padding: 0 10px;
         }
       }
     }
