@@ -40,12 +40,30 @@ function App() {
 				</div>
 				<nav className="header-bottom-slide">
 					<div className="header-search-container">
-						<div className="logo-container">
-							<a id="header-logo" className="logo" href="/"> </a>
+						<div className="header-menu-wrapper">
+							<div className="logo-container">
+								<a id="header-logo" className="logo" href="/">{null}</a>
+							</div>
+							<form className="presearch">
+								<div>123 </div>
+							</form>
+							<div className="buttons">
+								<a className="ui-link-compare-link" href="/">
+									<span className="compare-link-badge-empty"></span>
+									<span className="compare-link-icon"></span>
+									<span className="compare-link-label">Сравнить</span>
+								</a>
+								<a className="ui-link-wishlist-link" href="/">
+									<span className="wishlist-link-badge_empty"></span>
+									<span className="wishlist-link-icon"></span>
+									<span className="wishlist-link-label">Избранное</span>
+								</a>
+								<a className="ui-link-cart-link" href="/">{null}</a>
+							</div>
+							<div className="header-login">
+								<button className="header-login-button">Войти</button>
+							</div>
 						</div>
-						<form className="presearch">
-
-						</form>
 					</div>
 				</nav>
 			</header>

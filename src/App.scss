@@ -29,6 +29,12 @@ dd {
   margin: 0;
 }
 
+a {
+  cursor: pointer;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 .App {
   text-align: center;
   background-color: rgb(239, 239, 239);
@@ -190,37 +196,185 @@ dd {
         width: 1200px;
         height: 64px;
         position: relative;
+        text-align: left;
         margin: 0 342px;
         padding: 0 10px;
-        display: inline-block;
 
-        .logo-container {
-          width: 120px;
-          height: 64px;
-          //background-color: yellow;
-          //background: url(icons/bns.svg) no-repeat;
+        .header-menu-wrapper {
+          display: flex;
+          white-space: nowrap;
+          flex-flow: row;
 
-          .logo {
-            display: inline-block;
-            height: 64px;
-          }
+          .logo-container {
+            //width: 120px;
+            //height: 64px;
+            box-sizing: content-box;
+            float: left;
+            max-height: 64px;
+            max-width: 280px;
+            padding-bottom: 0;
+            text-align: left;
 
-          @media (min-width: 992px) {
             .logo {
-              vertical-align: middle;
-              width: 120px;
-              background: url(icons/bns.svg) 0 center no-repeat;
-              transition: all 0.3s ease-in 0s;
+              display: inline-block;
+              height: 64px;
+            }
+
+            @media (min-width: 992px) {
+              .logo {
+                vertical-align: middle;
+                width: 120px;
+                background: url(icons/bns.svg) 0 center no-repeat;
+                transition: all 0.3s ease-in 0s;
+              }
             }
           }
-        }
 
-        .presearch {
-          box-sizing: border-box;
-          height: 64px;
-          width: 100%;
-          padding: 12px 20px;
-          background-color: yellow;
+          .presearch {
+            box-sizing: border-box;
+            display: inline-block;
+            height: 64px;
+            width: 100%;
+            //width: 666px;
+            padding: 12px 20px;
+            background-color: yellow;
+          }
+
+          .buttons {
+            padding: 18px 0;
+            background-color: blue;
+
+            .ui-link-compare-link {
+              font-size: 15px;
+
+              .compare-link-badge-empty {
+                display: none;
+              }
+
+              .compare-link-badge {
+                align-items: center;
+                background-image: linear-gradient(rgb(255, 188, 11), rgb(255, 116, 0));
+                color: rgb(255, 255, 255);
+                font-size: 12px;
+                font-weight: bolder;
+                height: 20px;
+                justify-content: center;
+                left: 8px;
+                line-height: 20px;
+                min-width: 20px;
+                position: absolute;
+                text-align: center;
+                top: -12px;
+                border-radius: 20px;
+                padding: 0 5px;
+              }
+
+              .compare-link-icon {
+                color: rgb(175, 175, 175);
+                font-size: 21px;
+
+                &::before {
+                  content: "\e90e";
+                  speak: none;
+                  display: inline-block;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 1;
+                  text-transform: none;
+                  font-family: i-icon !important;
+                  font-variant: normal;
+                }
+              }
+
+              .compare-link-label {
+                margin-left: 8px;
+              }
+            }
+
+            .ui-link-wishlist-link {
+              font-size: 15px;
+              margin: 0 0 0 20px;
+
+              .wishlist-link-badge-empty {
+                display: none;
+              }
+
+              .wishlist-link-badge {
+                align-items: center;
+                background-image: linear-gradient(rgb(255, 188, 11), rgb(255, 116, 0));
+                color: rgb(255, 255, 255);
+                font-size: 12px;
+                font-weight: bolder;
+                height: 20px;
+                justify-content: center;
+                left: 8px;
+                line-height: 20px;
+                min-width: 20px;
+                position: absolute;
+                text-align: center;
+                top: -12px;
+                border-radius: 20px;
+                padding: 0 5px;
+              }
+
+              .wishlist-link-icon {
+                color: rgb(175, 175, 175);
+                font-size: 21px;
+
+                &::before {
+                  content: "\e90e";
+                  speak: none;
+                  display: inline-block;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 1;
+                  text-transform: none;
+                  font-family: i-icon !important;
+                  font-variant: normal;
+                }
+              }
+
+              .wishlist-link-label {
+                margin-left: 8px;
+              }
+            }
+          }
+
+          @media (min-width: 768px) {
+            .buttons {
+              display: inline-block;
+              vertical-align: top;
+              background-color: transparent;
+              box-sizing: border-box;
+              float: none;
+              text-align: left;
+              white-space: nowrap;
+              margin: 0;
+            }
+          }
+
+          @media (min-width: 1200px) {
+            .buttons {
+              height: 64px;
+              width: calc(100% - 856px);
+            }
+          }
+
+          .header-login {
+            cursor: pointer;
+            display: inline-block;
+            height: 64px;
+            margin-left: 20px;
+            padding-top: 12px;
+            position: relative;
+            vertical-align: top;
+            width: 64px;
+
+            .header-login-button {
+              min-width: 0 !important;
+              padding: 0 12px !important;
+            }
+          }
         }
       }
     }
