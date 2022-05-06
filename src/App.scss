@@ -338,6 +338,54 @@ a {
                 margin-left: 8px;
               }
             }
+
+            .ui-link-cart-link {
+              font-size: 15px;
+              margin: 0 0 0 20px;
+
+              .cart-link-badge-empty {
+                display: none;
+              }
+
+              .cart-link-badge {
+                align-items: center;
+                background-image: linear-gradient(rgb(255, 188, 11), rgb(255, 116, 0));
+                color: rgb(255, 255, 255);
+                font-size: 12px;
+                font-weight: bolder;
+                height: 20px;
+                justify-content: center;
+                left: 8px;
+                line-height: 20px;
+                min-width: 20px;
+                position: absolute;
+                text-align: center;
+                top: -12px;
+                border-radius: 20px;
+                padding: 0 5px;
+              }
+
+              .cart-link-icon {
+                color: rgb(175, 175, 175);
+                font-size: 21px;
+
+                &::before {
+                  content: "\e90e";
+                  speak: none;
+                  display: inline-block;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 1;
+                  text-transform: none;
+                  font-family: i-icon !important;
+                  font-variant: normal;
+                }
+              }
+
+              .cart-link-label {
+                margin-left: 8px;
+              }
+            }
           }
 
           @media (min-width: 768px) {

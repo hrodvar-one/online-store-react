@@ -58,7 +58,11 @@ function App() {
 									<span className="wishlist-link-icon"></span>
 									<span className="wishlist-link-label">Избранное</span>
 								</a>
-								<a className="ui-link-cart-link" href="/">{null}</a>
+								<a className="ui-link-cart-link" href="/">
+									<span className="cart-link-badge-empty"></span>
+									<span className="cart-link-icon"></span>
+									<span className="cart-link-label">Корзина</span>
+								</a>
 							</div>
 							<div className="header-login">
 								<button className="header-login-button">Войти</button>
