@@ -47,11 +47,11 @@ function App() {
 							<form className="presearch">
 								<div className="ui-input-search-presearch">
 									<input className="ui-input-search" name="q" type="search" placeholder="Поиск по сайту" autocomplete="off"></input>
-									<div className="presearch-suggests-hidden"></div>
-									<div className="ui-input-search-buttons">
-										<span className="ui-input-search-icon-clear"></span>
-										<span className="ui-input-search-icon-search"></span>
-									</div>
+									{/*<div className="presearch-suggests-hidden"></div>*/}
+									{/*<div className="ui-input-search-buttons">*/}
+									{/*	<span className="ui-input-search-icon-clear"></span>*/}
+									{/*	<span className="ui-input-search-icon-search"></span>*/}
+									{/*</div>*/}
 								</div>
 							</form>
 							<div className="buttons">
@@ -71,8 +71,22 @@ function App() {
 									<span className="cart-link-label">Корзина</span>
 								</a>
 							</div>
-							<div className="header-login">
-								<button className="header-login-button">Войти</button>
+							<div className="header_user-menu">
+								<div id="user-menu">
+									<div className="user-menu">
+										<div className="user-notifications_counter user-profile__counter" style={{display: 'none'}}></div>
+										<div className="user-profile__login">
+											<div className="user-notifications__counter user-profile__counter user-profile__guest-counter" style={{display: 'none'}}></div>
+											<i className="user-profile__login-icon">
+
+											</i>
+											Войти
+										</div>
+										<div className="user-profile__menu">
+
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
