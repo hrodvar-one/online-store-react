@@ -3,6 +3,11 @@
     src: url(./fonts/font-awesome/fonts/fontawesome-webfont.ttf) format('truetype');
 }
 
+@font-face {
+    font-family: 'i-icon';
+    src: url(./fonts/i-icon/icon.woff2) format('woff2');
+}
+
 body {
     min-width: 320px;
     margin: 0;
