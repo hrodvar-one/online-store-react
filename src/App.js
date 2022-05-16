@@ -15,7 +15,7 @@ function App() {
 									<div className="select-city-widget">
 										<div className="select-city-widget-label">
 											<i className="location-icon"/>
-											<p>Омск </p>
+											<p>Омск</p>
 											<i className="arrow-icon"/>
 										</div>
 									</div>

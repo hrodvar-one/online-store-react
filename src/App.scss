@@ -80,7 +80,24 @@ a {
               .select-city-widget-label {
                 display: flex;
 
+                .location-icon {
+                  margin: 0 5px 0 0;
+
+                  &::before {
+                    content: "\e939";
+                    speak: none;
+                    display: inline-block;
+                    font-family: i-icon!important;
+                    font-style: normal;
+                    font-variant: normal;
+                    font-weight: 400;
+                    line-height: 1;
+                    text-transform: none;
+                  }
+                }
+
                 p {
+                  margin: 0 0 0 5px;
                   cursor: pointer;
                   &:hover {
                     color: rgb(252, 203, 121);
@@ -98,9 +115,14 @@ a {
             //  color: rgb(252, 203, 121);
             //}
 
-            .header-top-menu-dropdown-icon:before {
-              font-family: 'FontAwesome';
-              content: '   \f106';
+            .header-top-menu-dropdown-icon {
+              display: inline-block;
+              transform: rotate(180deg);
+
+              &::before {
+                font-family: 'i-icon';
+                content: "\e259";
+              }
             }
 
             .header-topmenu-common-link {
