@@ -14,9 +14,14 @@ function App() {
 								<div className="header-topmenu-common-link-city">
 									<div className="select-city-widget">
 										<div className="select-city-widget-label">
-											<i className="location-icon"/>
-											<p>Омск</p>
-											<i className="arrow-icon"/>
+											<div className="select-city-hover">
+												<i className="location-icon"/>
+												<p>Омск</p>
+												<i className="arrow-icon"/>
+											</div>
+											{/*<i className="location-icon"/>*/}
+											{/*<p>Омск</p>*/}
+											{/*<i className="arrow-icon"/>*/}
 										</div>
 									</div>
 								</div>

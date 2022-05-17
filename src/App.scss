@@ -80,25 +80,30 @@ a {
               .select-city-widget-label {
                 display: flex;
 
-                .location-icon {
-                  margin: 0 5px 0 0;
+                .select-city-hover {
+                  display: flex;
 
-                  &::before {
-                    content: "\e939";
-                    speak: none;
-                    display: inline-block;
-                    font-family: i-icon!important;
-                    font-style: normal;
-                    font-variant: normal;
-                    font-weight: 400;
-                    line-height: 1;
-                    text-transform: none;
+                  .location-icon {
+                    margin: 0 5px 0 0;
+
+                    &::before {
+                      content: "\e939";
+                      speak: none;
+                      display: inline-block;
+                      font-family: i-icon!important;
+                      font-style: normal;
+                      font-variant: normal;
+                      font-weight: 400;
+                      line-height: 1;
+                      text-transform: none;
+                    }
                   }
-                }
 
-                p {
-                  margin: 0 0 0 5px;
-                  cursor: pointer;
+                  p {
+                    margin: 0 0 0 5px;
+                    cursor: pointer;
+                  }
+
                   &:hover {
                     color: rgb(252, 203, 121);
                   }
@@ -116,6 +121,16 @@ a {
             //}
 
             .header-top-menu-dropdown-icon {
+              display: inline-block;
+              //transform: rotate(180deg);
+
+              &::before {
+                font-family: 'i-icon';
+                content: "\e259";
+              }
+            }
+
+            .header-top-menu-dropdown-icon-rotate {
               display: inline-block;
               transform: rotate(180deg);
 
@@ -180,19 +195,9 @@ a {
               }
 
               &::before {
-                font-family: 'FontAwesome';
-                content: '\f095';
-                color: rgb(252, 133, 7);
-                padding-right: 5px;
-                text-shadow: 1px 0 1px #ffffff,
-                0 1px 1px #ffffff,
-                -1px 0 1px #ffffff,
-                0 -1px 1px #ffffff;
-              }
-            }
-
-            @media (min-width: 992px) {
-              .header-topmenu-profile-list-item-span-phone:before {
+                font-family: i-icon;
+                content: '\e92f';
+                padding-right: 2px;
                 display: inline-block;
                 font-style: normal;
                 font-variant: normal;
@@ -261,24 +266,20 @@ a {
             //background-color: yellow;
 
             .ui-input-search-presearch {
+              box-sizing: border-box;
               font-size: 16px;
-              height: auto;
-              position: relative;
+              height: 40px;
 
               .ui-input-search {
-                color: rgb(51, 51, 51);
-                height: 40px;
-                //height: auto;
-                width: 100%;
                 background: rgb(242, 242, 242);
-                border-width: initial;
-                border-style: none;
-                border-color: initial;
-                border-image: initial;
+                border: none;
                 border-radius: 8px;
+                color: rgb(51, 51, 51);
+                height: 34px;
                 outline: none;
                 padding: 0 80px 0 12px;
                 transition: background 0.3s ease 0s;
+                width: 100%;
               }
 
               .presearch-suggests-hidden {
@@ -336,6 +337,10 @@ a {
               .compare-link-label {
                 margin-left: 8px;
                 color: #333333;
+
+                &:hover {
+                  color: rgb(252, 88, 8);
+                }
               }
             }
 
@@ -385,6 +390,10 @@ a {
               .wishlist-link-label {
                 margin-left: 8px;
                 color: #333333;
+
+                &:hover {
+                  color: rgb(252, 88, 8);
+                }
               }
             }
 
@@ -434,6 +443,10 @@ a {
               .cart-link-label {
                 margin-left: 8px;
                 color: #333333;
+
+                &:hover {
+                  color: rgb(252, 88, 8);
+                }
               }
             }
           }
