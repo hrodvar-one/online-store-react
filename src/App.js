@@ -19,9 +19,6 @@ function App() {
 												<p>Омск</p>
 												<i className="arrow-icon"/>
 											</div>
-											{/*<i className="location-icon"/>*/}
-											{/*<p>Омск</p>*/}
-											{/*<i className="arrow-icon"/>*/}
 										</div>
 									</div>
 								</div>
@@ -53,10 +50,10 @@ function App() {
 								<div className="ui-input-search-presearch">
 									<input className="ui-input-search" name="q" type="search" placeholder="Поиск по сайту" autocomplete="off"></input>
 									{/*<div className="presearch-suggests-hidden"></div>*/}
-									{/*<div className="ui-input-search-buttons">*/}
-									{/*	<span className="ui-input-search-icon-clear"></span>*/}
-									{/*	<span className="ui-input-search-icon-search"></span>*/}
-									{/*</div>*/}
+									<div className="ui-input-search-buttons">
+										<span className="ui-input-search-icon-clear"></span>
+										<span className="ui-input-search-icon-search"></span>
+									</div>
 								</div>
 							</form>
 							<div className="buttons">
