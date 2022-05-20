@@ -48,7 +48,7 @@ function App() {
 							</div>
 							<form className="presearch">
 								<div className="ui-input-search-presearch">
-									<input className="ui-input-search" name="q" type="search" placeholder="Поиск по сайту" autocomplete="off"></input>
+									<input className="ui-input-search" name="q" type="search" placeholder="Поиск по сайту" autoComplete="off"></input>
 									{/*<div className="presearch-suggests-hidden"></div>*/}
 									<div className="ui-input-search-buttons">
 										<span className="ui-input-search-icon-clear"></span>
