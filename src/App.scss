@@ -303,6 +303,7 @@ input:-ms-input-placeholder {
 
               .ui-input-search {
                 //background: brown;
+                width: 575px;
                 background: none;
                 border: none;
                 height: 34px;
@@ -318,6 +319,8 @@ input:-ms-input-placeholder {
 
               .ui-input-search-buttons {
                 display: inline-block;
+                color: rgb(154, 154, 154);
+                //background-color: yellow;
 
                 .ui-input-search-icon-clear {
                   
@@ -340,13 +343,19 @@ input:-ms-input-placeholder {
                     speak: none;
                     display: inline-block;
                     font-family: i-icon!important;
+                    font-size: 20px;
                     font-style: normal;
                     font-variant: normal;
                     font-weight: 400;
                     line-height: 1;
                     text-transform: none;
-                    position: absolute;
                   }
+                }
+
+                &:hover {
+                  //color: yellow;
+                  color: rgb(51, 51, 51);
+                  cursor: pointer;
                 }
               }
             }
@@ -622,7 +631,19 @@ input:-ms-input-placeholder {
       .homepage-top-grid-menu {
         width: 280px;
         height: 720px;
-        background-color: brown;
+        //background-color: brown;
+
+        .menu-desktop {
+          display: flex;
+          flex-direction: column;
+          height: 720px;
+          position: relative;
+          width: 100%;
+          background-color: #fff;
+          border-radius: 8px;
+          //box-shadow: 0 1px 2px 0 rgb(0 0 0 / 16%);
+          box-shadow: 0 1px 2px 0 black;
+        }
       }
 
       @media (min-width: 1200px) {
