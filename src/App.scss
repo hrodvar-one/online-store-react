@@ -87,7 +87,8 @@ input:-ms-input-placeholder {
       .header-topmenu-container {
         height: 33px;
         display: flex;
-        margin: 0 352px;
+        //margin: 0 352px;
+        margin: 0 361px;
 
         .header-topmenu-common-list {
           display: flex;
@@ -247,7 +248,8 @@ input:-ms-input-placeholder {
         height: 64px;
         position: relative;
         text-align: left;
-        margin: 0 342px;
+        //margin: 0 342px;
+        margin: 0 351px;
         padding: 0 10px;
 
         .header-menu-wrapper {
@@ -616,7 +618,7 @@ input:-ms-input-placeholder {
   }
 
   .container {
-    background-color: coral;
+    //background-color: coral;
     box-sizing: content-box;
     margin-left: auto;
     margin-right: auto;
@@ -626,7 +628,7 @@ input:-ms-input-placeholder {
       width: 1180px;
       height: 720px;
       margin-bottom: 48px;
-      background-color: cadetblue;
+      //background-color: cadetblue;
 
       .homepage-top-grid-menu {
         width: 280px;
@@ -634,12 +636,17 @@ input:-ms-input-placeholder {
         //background-color: brown;
 
         .menu-desktop {
+
+        }
+
+        @media (min-width: 1200px) {
           display: flex;
           flex-direction: column;
           height: 720px;
           position: relative;
           width: 100%;
-          background-color: #fff;
+          //background-color: #fff;
+          background: #ffffff;
           border-radius: 8px;
           //box-shadow: 0 1px 2px 0 rgb(0 0 0 / 16%);
           box-shadow: 0 1px 2px 0 black;
