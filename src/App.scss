@@ -276,7 +276,7 @@ input:-ms-input-placeholder {
               .logo {
                 vertical-align: middle;
                 width: 120px;
-                background: url(icons/bns.svg) 0 center no-repeat;
+                background: url(icons/header/bns.svg) 0 center no-repeat;
                 transition: all 0.3s ease-in 0s;
               }
             }
@@ -636,20 +636,92 @@ input:-ms-input-placeholder {
         //background-color: brown;
 
         .menu-desktop {
-
-        }
-
-        @media (min-width: 1200px) {
           display: flex;
           flex-direction: column;
           height: 720px;
           position: relative;
           width: 100%;
-          //background-color: #fff;
           background: #ffffff;
           border-radius: 8px;
-          //box-shadow: 0 1px 2px 0 rgb(0 0 0 / 16%);
-          box-shadow: 0 1px 2px 0 black;
+          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16);
+
+          .menu-desktop-root:first-child {
+            margin-top: 9px;
+          }
+
+          .menu-desktop-root {
+            align-items: center;
+            display: flex;
+            flex: 1;
+            margin: 0 -1px;
+            max-height: 65px;
+            padding: 0 24px;
+            width: calc(100% + 2px);
+
+            &:before {
+              content: "";
+              display: inline-block;
+              height: 100%;
+              vertical-align: middle;
+            }
+
+            .menu-desktop-root-icon {
+              background-image: url(/icons/body/appliances.svg);
+              background-position: 50%;
+              background-repeat: no-repeat;
+              background-size: contain;
+              display: inline-block;
+              height: 25px;
+              margin-right: 24px;
+              text-align: center;
+              vertical-align: middle;
+              width: 25px;
+            }
+
+            .menu-desktop-root-info {
+              display: inline-block;
+              line-height: 1.1em;
+              vertical-align: middle;
+              width: calc(100% - 52px);
+              text-align: left;
+
+              .ui-link-menu-desktop-root-title {
+                font-size: 16px;
+                color: #333;
+                text-decoration: none;
+                transition-duration: .3s;
+                transition-property: color;
+              }
+
+              .menu-desktop-root-subtitles {
+                font-size: 14px;
+                height: 1.2em;
+                overflow: hidden;
+                word-break: keep-all;
+
+                .ui-link-menu-desktop-root-subtitle-left {
+                  color: #888;
+                  display: inline-block;
+                  text-decoration: none;
+                  transition-duration: .3s;
+                  transition-property: color;
+                }
+
+                .ui-link-menu-desktop-root-subtitle-right {
+                  color: #888;
+                  display: inline-block;
+                  text-decoration: none;
+                  transition-duration: .3s;
+                  transition-property: color;
+                  margin-left: 8px;
+                }
+              }
+
+              .menu-desktop-root-subtitle+.menu-desktop-root-subtitle {
+                margin-left: 8px;
+              }
+            }
+          }
         }
       }
 

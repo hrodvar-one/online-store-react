@@ -2,6 +2,7 @@ import './App.scss';
 import React from "react";
 import HeaderTopMenuCommonListLi from "./components/header/li/HeaderTopMenuCommonListLi/HeaderTopMenuCommonListLi";
 import DropdownLink from "./components/header/DropdownLink/DropdownLink";
+import MenuDesktopRoot from "./components/container/MenuDesktopRoot/MenuDesktopRoot";
 
 function App() {
 	return (
@@ -98,6 +99,27 @@ function App() {
 				<div className="homepage-top-grid">
 					<div className="homepage-top-grid-menu">
 						<div className="menu-desktop">
+							<MenuDesktopRoot />
+							<MenuDesktopRoot />
+							<MenuDesktopRoot />
+							<MenuDesktopRoot />
+							<MenuDesktopRoot />
+							<MenuDesktopRoot />
+							<MenuDesktopRoot />
+							<MenuDesktopRoot />
+							<MenuDesktopRoot />
+							<MenuDesktopRoot />
+							<MenuDesktopRoot />
+							{/*<div className="menu-desktop-root">*/}
+							{/*	<span className="menu-desktop-root-icon"></span>*/}
+							{/*	<div className="menu-desktop-root-info">*/}
+							{/*		<a className="ui-link-menu-desktop-root-title" href="/#">Бытовая техника</a>*/}
+							{/*		<div className="menu-desktop-root-subtitles">*/}
+							{/*			<a className="ui-link-menu-desktop-root-subtitle-left" href="/#">для дома</a>*/}
+							{/*			<a className="ui-link-menu-desktop-root-subtitle-right" href="/#">уход за собой</a>*/}
+							{/*		</div>*/}
+							{/*	</div>*/}
+							{/*</div>*/}
 						</div>
 					</div>
 					<div className="homepage-top-grid-center">
