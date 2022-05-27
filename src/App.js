@@ -99,27 +99,17 @@ function App() {
 				<div className="homepage-top-grid">
 					<div className="homepage-top-grid-menu">
 						<div className="menu-desktop">
-							<MenuDesktopRoot />
-							<MenuDesktopRoot />
-							<MenuDesktopRoot />
-							<MenuDesktopRoot />
-							<MenuDesktopRoot />
-							<MenuDesktopRoot />
-							<MenuDesktopRoot />
-							<MenuDesktopRoot />
-							<MenuDesktopRoot />
-							<MenuDesktopRoot />
-							<MenuDesktopRoot />
-							{/*<div className="menu-desktop-root">*/}
-							{/*	<span className="menu-desktop-root-icon"></span>*/}
-							{/*	<div className="menu-desktop-root-info">*/}
-							{/*		<a className="ui-link-menu-desktop-root-title" href="/#">Бытовая техника</a>*/}
-							{/*		<div className="menu-desktop-root-subtitles">*/}
-							{/*			<a className="ui-link-menu-desktop-root-subtitle-left" href="/#">для дома</a>*/}
-							{/*			<a className="ui-link-menu-desktop-root-subtitle-right" href="/#">уход за собой</a>*/}
-							{/*		</div>*/}
-							{/*	</div>*/}
-							{/*</div>*/}
+							<MenuDesktopRoot title="Бытовая техника" leftSubtitle="для дома" rightSubtitle="уход за собой"/>
+							<MenuDesktopRoot title="Смартфоны и гаджеты" leftSubtitle="планшеты" rightSubtitle="фототехника"/>
+							<MenuDesktopRoot title="ТВ и мультимедиа" leftSubtitle="аудио" rightSubtitle="видеоигры"/>
+							<MenuDesktopRoot title="Компьютеры" leftSubtitle="комплектующие" rightSubtitle="ноутбуки"/>
+							<MenuDesktopRoot title="Офис и сеть" leftSubtitle="кресла" rightSubtitle="проекторы"/>
+							<MenuDesktopRoot title="Отдых и развлечения" leftSubtitle="электросамокаты" rightSubtitle="мангалы"/>
+							<MenuDesktopRoot title="Инструменты" leftSubtitle="аккумуляторные" rightSubtitle="садовые"/>
+							<MenuDesktopRoot title="Строительство и ремонт" leftSubtitle="электрика" rightSubtitle="сантехника"/>
+							<MenuDesktopRoot title="Дом, декор и кухня" leftSubtitle="зоотовары" rightSubtitle="посуда"/>
+							<MenuDesktopRoot title="Автотовары" leftSubtitle="звук" rightSubtitle="автокресла"/>
+							<MenuDesktopRoot title="Аксессуары и услуги" leftSubtitle="наушники" rightSubtitle="мыши"/>
 						</div>
 					</div>
 					<div className="homepage-top-grid-center">

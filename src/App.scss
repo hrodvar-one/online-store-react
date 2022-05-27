@@ -654,7 +654,8 @@ input:-ms-input-placeholder {
             display: flex;
             flex: 1;
             margin: 0 -1px;
-            max-height: 65px;
+            //max-height: 65px;
+            max-height: 59px;
             padding: 0 24px;
             width: calc(100% + 2px);
 
