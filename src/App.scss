@@ -687,15 +687,21 @@ input:-ms-input-placeholder {
               text-align: left;
 
               .ui-link-menu-desktop-root-title {
-                font-size: 16px;
+                //font-size: 16px;
+                font-size: 14px;
                 color: #333;
                 text-decoration: none;
                 transition-duration: .3s;
                 transition-property: color;
+
+                &:hover {
+                  color: rgb(252, 88, 8);
+                }
               }
 
               .menu-desktop-root-subtitles {
-                font-size: 14px;
+                //font-size: 14px;
+                font-size: 12px;
                 height: 1.2em;
                 overflow: hidden;
                 word-break: keep-all;
@@ -706,6 +712,10 @@ input:-ms-input-placeholder {
                   text-decoration: none;
                   transition-duration: .3s;
                   transition-property: color;
+
+                  &:hover {
+                    color: rgb(252, 88, 8);
+                  }
                 }
 
                 .ui-link-menu-desktop-root-subtitle-right {
@@ -715,6 +725,10 @@ input:-ms-input-placeholder {
                   transition-duration: .3s;
                   transition-property: color;
                   margin-left: 8px;
+
+                  &:hover {
+                    color: rgb(252, 88, 8);
+                  }
                 }
               }
 

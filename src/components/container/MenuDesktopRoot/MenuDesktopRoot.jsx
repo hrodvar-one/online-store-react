@@ -7,9 +7,7 @@ const MenuDesktopRoot = (props) => {
 			<div className="menu-desktop-root-info">
 				<a className="ui-link-menu-desktop-root-title" href="/#">{props.title}</a>
 				<div className="menu-desktop-root-subtitles">
-					{/*<a className="ui-link-menu-desktop-root-subtitle-left" href="/#">для дома</a>*/}
 					<a className="ui-link-menu-desktop-root-subtitle-left" href="/#">{props.leftSubtitle}</a>
-					{/*<a className="ui-link-menu-desktop-root-subtitle-right" href="/#">уход за собой</a>*/}
 					<a className="ui-link-menu-desktop-root-subtitle-right" href="/#">{props.rightSubtitle}</a>
 				</div>
 			</div>
