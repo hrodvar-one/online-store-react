@@ -3,6 +3,7 @@ import React from "react";
 import HeaderTopMenuCommonListLi from "./components/header/li/HeaderTopMenuCommonListLi/HeaderTopMenuCommonListLi";
 import DropdownLink from "./components/header/DropdownLink/DropdownLink";
 import MenuDesktopRoot from "./components/container/MenuDesktopRoot/MenuDesktopRoot";
+import MenuDesktopRootMarkdown from "./components/container/MenuDesktopRootMarkdown/MenuDesktopRootMarkdown";
 
 function App() {
 	return (
@@ -154,6 +155,10 @@ function App() {
 								title="Аксессуары и услуги"
 								leftSubtitle="наушники"
 								rightSubtitle="мыши"
+							/>
+							<MenuDesktopRootMarkdown
+								title="Уценённые товары"
+
 							/>
 						</div>
 					</div>

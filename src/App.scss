@@ -737,6 +737,58 @@ input:-ms-input-placeholder {
               }
             }
           }
+
+          .menu-desktop-root-markdown {
+            border-top: 1px solid rgb(238, 238, 238);
+            align-items: center;
+            display: flex;
+            flex: 1;
+            margin: 0 -1px;
+            max-height: 59px;
+            padding: 0 24px;
+            width: calc(100% + 2px);
+
+            &:before {
+              content: "";
+              display: inline-block;
+              height: 100%;
+              vertical-align: middle;
+            }
+
+            .menu-desktop-root-icon {
+              background-image: url(/icons/body/appliances.svg);
+              background-position: 50%;
+              background-repeat: no-repeat;
+              background-size: contain;
+              display: inline-block;
+              height: 25px;
+              margin-right: 24px;
+              text-align: center;
+              vertical-align: middle;
+              width: 25px;
+            }
+
+            .menu-desktop-root-info {
+              display: inline-block;
+              line-height: 1.1em;
+              vertical-align: middle;
+              width: calc(100% - 52px);
+              text-align: left;
+
+              .ui-link-menu-desktop-root-title {
+                //font-size: 16px;
+                font-size: 14px;
+                color: #333;
+                text-decoration: none;
+                transition-duration: .3s;
+                transition-property: color;
+
+                &:hover {
+                  color: rgb(252, 88, 8);
+                }
+              }
+            }
+          }
         }
       }
 
