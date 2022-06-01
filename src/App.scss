@@ -666,6 +666,10 @@ input:-ms-input-placeholder {
               vertical-align: middle;
             }
 
+            &:hover {
+              background: rgba(0, 0, 0, .05);
+            }
+
             .menu-desktop-root-icon {
               background-image: url(/icons/body/appliances.svg);
               background-position: 50%;
@@ -753,6 +757,10 @@ input:-ms-input-placeholder {
               display: inline-block;
               height: 100%;
               vertical-align: middle;
+            }
+
+            &:hover {
+              background: rgba(0, 0, 0, .05);
             }
 
             .menu-desktop-root-icon {
