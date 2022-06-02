@@ -158,7 +158,7 @@ function App() {
 							/>
 							<MenuDesktopRootMarkdown
 								title="Уценённые товары"
-
+								imgUrl="/icons/body/smartphones_and_gadgets.svg"
 							/>
 						</div>
 					</div>
