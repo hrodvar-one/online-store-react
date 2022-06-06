@@ -2,7 +2,7 @@ import React from 'react';
 
 const MenuDesktopRootMarkdown = (props) => {
 
-	// const imgUrl = "/"
+	const imgUrl = "src/icons/body/"
 
 	return (
 		<div className="menu-desktop-root-markdown">
