@@ -104,7 +104,7 @@ function App() {
 								title="Бытовая техника"
 								leftSubtitle="для дома"
 								rightSubtitle="уход за собой"
-								svgUrl="/icons/body/appliances.svg"
+								// svgUrl="/icons/body/appliances.svg"
 							/>
 							<MenuDesktopRoot
 								title="Смартфоны и гаджеты"
@@ -158,7 +158,8 @@ function App() {
 							/>
 							<MenuDesktopRootMarkdown
 								title="Уценённые товары"
-								imgUrl="/icons/body/smartphones_and_gadgets.svg"
+								// imgUrl="/icons/body/smartphones_and_gadgets.svg"
+								imgName="smartphones_and_gadgets.svg"
 							/>
 						</div>
 					</div>
