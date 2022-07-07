@@ -104,62 +104,71 @@ function App() {
 								title="Бытовая техника"
 								leftSubtitle="для дома"
 								rightSubtitle="уход за собой"
-								// svgUrl="/icons/body/appliances.svg"
+								imgName="appliances.svg"
 							/>
 							<MenuDesktopRoot
 								title="Смартфоны и гаджеты"
 								leftSubtitle="планшеты"
 								rightSubtitle="фототехника"
+								imgName="smartphones_and_gadgets.svg"
 							/>
 							<MenuDesktopRoot
 								title="ТВ и мультимедиа"
 								leftSubtitle="аудио"
 								rightSubtitle="видеоигры"
+								imgName="tv_and_multimedia.svg"
 							/>
 							<MenuDesktopRoot
 								title="Компьютеры"
 								leftSubtitle="комплектующие"
 								rightSubtitle="ноутбуки"
+								imgName="computers.svg"
 							/>
 							<MenuDesktopRoot
 								title="Офис и сеть"
 								leftSubtitle="кресла"
 								rightSubtitle="проекторы"
+								imgName="office_and_network.svg"
 							/>
 							<MenuDesktopRoot
 								title="Отдых и развлечения"
 								leftSubtitle="электросамокаты"
 								rightSubtitle="мангалы"
+								imgName="recreation_and_entertainment.svg"
 							/>
 							<MenuDesktopRoot
 								title="Инструменты"
 								leftSubtitle="аккумуляторные"
 								rightSubtitle="садовые"
+								imgName="tools.svg"
 							/>
 							<MenuDesktopRoot
 								title="Строительство и ремонт"
 								leftSubtitle="электрика"
 								rightSubtitle="сантехника"
+								imgName="construction_and_repair.svg"
 							/>
 							<MenuDesktopRoot
 								title="Дом, декор и кухня"
 								leftSubtitle="зоотовары"
 								rightSubtitle="посуда"
+								imgName="home_decor_and_kitchen.svg"
 							/>
 							<MenuDesktopRoot
 								title="Автотовары"
 								leftSubtitle="звук"
 								rightSubtitle="автокресла"
+								imgName="auto_products.svg"
 							/>
 							<MenuDesktopRoot
 								title="Аксессуары и услуги"
 								leftSubtitle="наушники"
 								rightSubtitle="мыши"
+								imgName="accessories_and_services.svg"
 							/>
 							<MenuDesktopRootMarkdown
 								title="Уценённые товары"
-								// imgUrl="/icons/body/smartphones_and_gadgets.svg"
-								imgName="smartphones_and_gadgets.svg"
+								imgName="markdown_products.svg"
 							/>
 						</div>
 					</div>
