@@ -671,7 +671,6 @@ input:-ms-input-placeholder {
             }
 
             .menu-desktop-root-icon {
-              //background-image: url(/icons/body/appliances.svg);
               background-position: 50%;
               background-repeat: no-repeat;
               background-size: contain;
@@ -813,6 +812,80 @@ input:-ms-input-placeholder {
         width: 880px;
         height: 720px;
         background-color: blueviolet;
+
+        .homepage-top-grid-banners {
+
+          .homepage-actions-mobile-link {
+            color: rgb(0, 0, 0);;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 30px;
+            margin-bottom: 8px;
+            padding: 0 10px;
+            text-decoration: none;
+
+            .homepage-actions-mobile-link-all {
+              background: rgb(255, 255, 255);
+              border-radius: 4px;
+              box-shadow: rgba(0, 0, 0, 0.1) 0 0 8px;
+              display: inline-block;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 18px;
+              margin-left: 8px;
+              padding: 2px 3px 2px 8px;
+            }
+          }
+
+          @media (min-width: 992px) {
+            .homepage-actions-mobile-link {
+              display: none;
+            }
+          }
+
+          .homepage-slider-wrap {
+
+            .tns-outer {
+              padding: 0 !important;
+            }
+
+            @media (min-width: 1200px) {
+              .tns-outer {
+                width: 100%;
+              }
+            }
+          }
+
+          @media (min-width: 1200px) {
+            .homepage-slider-wrap {
+              background-clip: border-box;
+              background-color: rgb(255, 255, 255);
+              border: none;
+              border-radius: 8px;
+              box-shadow: rgba(0, 0, 0, 0 / 0.16) 0 1px 2px 0;
+              display: flex;
+              -webkit-mask-image: -webkit-radial-gradient(#fff,#000);
+              overflow: hidden;
+              position: relative;
+              transition: .5s;
+              width: 100%;
+              height: 220px;
+            }
+          }
+        }
+
+        @media (min-width: 1200px) {
+          .homepage-top-grid-banners {
+            //background-color: green;
+            display: flex;
+            flex-basis: 580px;
+            flex-grow: 0;
+            flex-shrink: 0;
+            max-height: 220px;
+            max-width: 580px;
+            min-height: 1px;
+          }
+        }
       }
     }
 

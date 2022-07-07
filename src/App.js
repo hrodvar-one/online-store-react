@@ -87,7 +87,6 @@ function App() {
 											Войти
 										</div>
 										<div className="user-profile__menu">
-
 										</div>
 									</div>
 								</div>
@@ -173,11 +172,52 @@ function App() {
 						</div>
 					</div>
 					<div className="homepage-top-grid-center">
+						<div className="homepage-top-grid-banners">
+							<a className="homepage-actions-mobile-link" href="/actions/">
+								<span>
+									Акции
+								</span>
+								<span className="homepage-actions-mobile-link-all">
+									Все
+									<span className="homepage-actions-mobile-link-icon"></span>
+								</span>
+							</a>
+							<div className="homepage-slider-wrap" data-role="homepage-banner-slider">
+								<div className="tns-outer" id="tns1-ow">
+									<div className="tns-controls" aria-label="Carousel Navigation" tabIndex="0">
+										<button type="button" tabIndex="-1" aria-controls="tns1">
+											<div className="icon-arrow-left">
+												<i>
 
+												</i>
+											</div>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div className="homepage-top-grid-shops">
+
+						</div>
+						<div className="homepage-top-grid-action">
+
+						</div>
+						<div className="homepage-top-grid-menu-mobile">
+
+						</div>
+						<div className="homepage-top-grid-actual-offers">
+
+						</div>
+						<div className="homepage-top-grid-stories-mobile">
+
+						</div>
+						<div className="homepage-top-grid-auth-left">
+
+						</div>
+						<div className="homepage-top-grid-auth-right">
+
+						</div>
 					</div>
-				</div>
-				<div className="homepage-top-grid-banner">
-
 				</div>
 				<div className="homepage-stories-desktop">
 					<div className="homepage-stories">
