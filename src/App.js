@@ -185,38 +185,121 @@ function App() {
 							<div className="homepage-slider-wrap" data-role="homepage-banner-slider">
 								<div className="tns-outer" id="tns1-ow">
 									<div className="tns-controls" aria-label="Carousel Navigation" tabIndex="0">
-										<button type="button" tabIndex="-1" aria-controls="tns1">
+										<button type="button" data-controls="prev" tabIndex="-1" aria-controls="tns1">
 											<div className="icon-arrow-left">
-												<i>
-
-												</i>
+												<i></i>
+											</div>
+										</button>
+										<button type="button" data-controls="next" tabIndex="-1" aria-controls="tns1">
+											<div className="icon-arrow-right">
+												<i></i>
 											</div>
 										</button>
 									</div>
+									<div className="tns-liveregion-visually-hidden" aria-live="polite" aria-atomic="true">
+										slide
+										<span className="current">12</span>
+										of 5
+									</div>
+									<div id="tns1-mw" className="tns-ovh">
+										<div className="tns-inner" id="tns1-iw">
+											<div className="homepage-banner-slider-carousel-horizontal"
+												 data-role="slider"
+												 id="tns1"
+												 // style="transform: translated3d(-60%, 0px, 0px);"
+											>
+											</div>
+										</div>
+									</div>
 								</div>
+								<ul className="slider-tabs" data-role="slider-nav" aria-label="Carousel Pagination">
+									<li
+										className="tabs-bottom"
+										data-nav="0"
+										aria-label="Carousel Page 1"
+										aria-controls="tns1"
+										tabIndex="-1"
+									>
+									</li>
+									<li
+										className="tabs-bottom"
+										data-nav="1"
+										aria-label="Carousel Page 2"
+										aria-controls="tns1"
+										tabIndex="-1"
+									>
+									</li>
+									<li
+										className="tabs-bottom"
+										data-nav="2"
+										aria-label="Carousel Page 3"
+										aria-controls="tns1"
+										tabIndex="-1"
+									>
+									</li>
+									<li
+										className="tabs-bottom"
+										data-nav="3"
+										aria-label="Carousel Page 4"
+										aria-controls="tns1"
+										tabIndex="-1"
+									>
+									</li>
+									<li
+										className="tabs-bottom"
+										data-nav="4"
+										aria-label="Carousel Page 5"
+										aria-controls="tns1"
+										tabIndex="-1"
+									>
+									</li>
+								</ul>
 							</div>
 						</div>
 						<div className="homepage-top-grid-shops">
-
+							<span id="as-a17" className="homepage-shops"></span>
+							<span id="as-c53" className="homepage-brands"></span>
 						</div>
-						<div className="homepage-top-grid-action">
-
+						<div className="homepage-top-grid-actions">
+							<div className="homepage-actions">
+								<span className="homepage-actions-logo"></span>
+								<a className="homepage-actions-title-ui-link" href="/actions/">
+									Акции
+									<span className="homepage-actions-title-button">
+										<span className="homepage-action-title-icon"></span>
+									</span>
+								</a>
+								<div className="homepage-actions-types">
+									<a className="homepage-actions-type-1-ui-link" href="/actions/?types=1">
+										Скидки и предложения
+										<span className="homepage-actions-type-count">64</span>
+									</a>
+									<a className="homepage-actions-type-30-ui-link" href="/actions/?types=30">
+										Рассрочка или выгода
+										<span className="homepage-actions-type-count">17</span>
+									</a>
+									<a className="homepage-actions-type-80-ui-link" href="/actions/?types=80">
+										Выгодные комплекты
+										<span className="homepage-actions-type-count">58</span>
+									</a>
+								</div>
+							</div>
 						</div>
-						<div className="homepage-top-grid-menu-mobile">
+						{/*<div className="homepage-top-grid-menu-mobile">*/}
 
-						</div>
-						<div className="homepage-top-grid-actual-offers">
+						{/*</div>*/}
+						{/*<div className="homepage-top-grid-actual-offers">*/}
 
-						</div>
-						<div className="homepage-top-grid-stories-mobile">
+						{/*</div>*/}
+						{/*<div className="homepage-top-grid-stories-mobile">*/}
 
-						</div>
-						<div className="homepage-top-grid-auth-left">
+						{/*</div>*/}
+						{/*<div className="homepage-top-grid-auth-left">*/}
 
-						</div>
-						<div className="homepage-top-grid-auth-right">
+						{/*</div>*/}
+						{/*<div className="homepage-top-grid-auth-right">*/}
 
-						</div>
+						{/*</div>*/}
 					</div>
 				</div>
 				<div className="homepage-stories-desktop">
