@@ -283,20 +283,33 @@ function App() {
 										<span className="homepage-actions-type-count">58</span>
 									</a>
 								</div>
+								<div className="homepage-actions-buttons">
+									<a className="button-action-all" href="/actions/">Все акции</a>
+									<a className="button-action-all-products" href="/catalog/actions/">Все товары</a>
+								</div>
 							</div>
 						</div>
-						{/*<div className="homepage-top-grid-menu-mobile">*/}
+						<div className="homepage-top-grid-menu-mobile">
+							<span id="as-786d" className="menu-mobile"></span>
+						</div>
+						<div className="homepage-top-grid-actual-offers">
+							<div className="homepage-actual-offers-main">
+								<div className="homepage-actual-offers-main-title">
+									Актуальные предложения
+								</div>
+								<div className="homepage-actual-offers-main-title-container">
 
-						{/*</div>*/}
-						{/*<div className="homepage-top-grid-actual-offers">*/}
+								</div>
+							</div>
+						</div>
+						<div className="homepage-top-grid-stories-mobile">
+							<span id="as-rXypvg" className="homepage-stories"></span>
+						</div>
+						<div className="homepage-top-grid-auth-left">
+							<div className="homepage-auth-homepage-auth-profile">
 
-						{/*</div>*/}
-						{/*<div className="homepage-top-grid-stories-mobile">*/}
-
-						{/*</div>*/}
-						{/*<div className="homepage-top-grid-auth-left">*/}
-
-						{/*</div>*/}
+							</div>
+						</div>
 						{/*<div className="homepage-top-grid-auth-right">*/}
 
 						{/*</div>*/}
