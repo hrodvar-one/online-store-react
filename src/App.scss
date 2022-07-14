@@ -1397,12 +1397,173 @@ input:-ms-input-placeholder {
               }
             }
 
-            .homepage-actual-offers-main-title-container {
+            .homepage-actual-offers-main-container {
               height: 200px;
+
+              .tabs-slider {
+
+                .tabs-slider-wrapper-mobile-gray-bg {
+
+                  .tns-outer {
+                    padding: 0 !important;
+
+                    .tns-controls {
+                      display: none;
+
+                      button[data-controls=prev] {
+
+                      }
+
+                      @media (min-width: 1200px) {
+                        button[data-controls=prev] {
+                          background: linear-gradient(90deg,rgb(255, 255, 255),hsla(0,0%,100%,0));
+                          left: 0;
+                          border: none;
+                          height: 36px;
+                          outline: none;
+                          position: absolute;
+                          top: 0;
+                          width: 20px;
+                          z-index: 500;
+                        }
+                      }
+
+                      button[data-controls=next] {
+
+                      }
+
+                      @media (min-width: 1200px) {
+                        button[data-controls=next] {
+                          background: linear-gradient(270deg,#fff,hsla(0,0%,100%,0));
+                          right: 0;
+                          border: none;
+                          height: 36px;
+                          outline: none;
+                          position: absolute;
+                          top: 0;
+                          width: 20px;
+                          z-index: 500;
+                        }
+                      }
+                    }
+
+                    .tns-liveregion-visually-hidden {
+                      position: absolute;
+                      left: -10000em;
+                    }
+
+                    #tns4-mw {
+
+                    }
+
+                    .tns-ovh {
+                      overflow: hidden;
+
+                      .tns-inner {
+
+                        .tabs-slider-tns-carousel-horizontal {
+                          transition-duration: 0s;
+                          transform: translate3d(0px, 0px, 0px);
+
+                          .tabs-slider-tns-slide-active {
+                            display: inline-block;
+                            vertical-align: top;
+                            white-space: normal;
+                            box-sizing: border-box;
+
+                            .tabs-slider-tab-title-active {
+
+                            }
+
+                            @media (min-width: 1200px) {
+                              .tabs-slider-tab-title-active {
+                                background-color: rgb(242, 242, 242);
+                                border-bottom: none;
+                                cursor: default;
+                                font-weight: 700;
+                                text-decoration: none;
+                                border-radius: 8px;
+                                display: inline-block;
+                                margin-right: 10px;
+                                outline: none;
+                                padding: 6px 12px;
+                                position: relative;
+                                text-align: center;
+                                transition: .3s;
+                              }
+                            }
+
+                            .tabs-slider-tab-title {
+
+                            }
+
+                            @media (min-width: 1200px) {
+                              .tabs-slider-tab-title {
+                                background-color: rgb(255, 255, 255);
+                                border-radius: 8px;
+                                cursor: pointer;
+                                display: inline-block;
+                                margin-right: 10px;
+                                outline: none;
+                                padding: 6px 12px;
+                                position: relative;
+                                text-align: center;
+                                transition: .3s;
+
+                                &:before {
+                                  border-bottom: 1px dotted rgba(0,0,0,.4);
+                                  bottom: 4px;
+                                  content: "";
+                                  display: inline-block;
+                                  left: 12px;
+                                  position: absolute;
+                                  width: calc(100% - 24px);
+                                  z-index: 100;
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+
+                      @media (min-width: 1200px) {
+                        .tns-inner {
+                          width: 100%;
+                        }
+                      }
+
+                      #tns4-iw {
+                        margin: 0;
+                      }
+                    }
+                  }
+
+                  @media (min-width: 1200px) {
+                    width: 100%;
+                  }
+                }
+
+                @media (min-width: 1200px) {
+                  .tabs-slider-wrapper-mobile-gray-bg {
+                    display: flex;
+                    margin: 0 auto 24px;
+                    overflow: hidden;
+                    position: relative;
+                    width: 100%;
+                  }
+                }
+              }
+
+              @media (min-width: 1200px) {
+                .tabs-slider {
+                  color: inherit;
+                  height: 100%;
+                }
+              }
             }
 
             @media (min-width: 992px) {
-              .homepage-actual-offers-main-title-container {
+              .homepage-actual-offers-main-container {
                 background-color: #fff;
                 border-radius: 8px;
                 box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0 / 16%);
@@ -1498,6 +1659,51 @@ input:-ms-input-placeholder {
 
         @media (min-width: 992px) {
           .homepage-top-grid-auth-left {
+            height: 153px;
+          }
+        }
+
+        .homepage-top-grid-auth-right {
+
+          .homepage-auth-homepage-auth-assembly {
+
+          }
+
+          @media (min-width: 992px) {
+            .homepage-auth-homepage-auth-assembly {
+              background-color: rgb(255, 255, 255);
+              border-radius: 8px;
+              box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0 / 16%);
+              height: 100%;
+              min-height: 153px;
+              padding: 24px;
+              position: relative;
+              width: 100%;
+            }
+          }
+
+          @media (min-width: 1200px) {
+            .homepage-auth-homepage-auth-assembly {
+              background-image: url(/icons/body/0672d8112dfbb30e34a6.png);
+              background-position: right 16px;
+              background-repeat: no-repeat;
+              transition: background-image 1s ease 0s;
+            }
+          }
+        }
+
+        @media (min-width: 1200px) {
+          .homepage-top-grid-auth-right {
+            display: flex;
+            flex-basis: calc(50% - 10px);
+            flex-grow: 0;
+            flex-shrink: 0;
+            max-width: calc(50% - 10px);
+          }
+        }
+
+        @media (min-width: 992px) {
+          .homepage-top-grid-auth-right {
             height: 153px;
           }
         }

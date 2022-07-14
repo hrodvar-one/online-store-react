@@ -297,8 +297,53 @@ function App() {
 								<div className="homepage-actual-offers-main-title">
 									Актуальные предложения
 								</div>
-								<div className="homepage-actual-offers-main-title-container">
-
+								<div className="homepage-actual-offers-main-container">
+									<div className="tabs-slider" data-tab-slider data-inited>
+										<div className="tabs-slider-wrapper-mobile-gray-bg">
+											<div className="tns-outer" id="tns4-ow">
+												<div className="tns-controls" aria-label="Carousel Navigation" tabIndex="0">
+													<button type="button" data-controls="prev" tabIndex="-1" aria-controls="tns4"></button>
+													<button type="button" data-controls="next" tabIndex="-1" aria-controls="tns4"></button>
+												</div>
+												<div className="tns-liveregion-visually-hidden" aria-live="polite" aria-atomic="true">
+													slide
+													<span className="current">1 to 5 </span>
+													of 5
+												</div>
+												<div id="tns4-mw" className="tns-ovh">
+													<div className="tns-inner" id="tns4-iw">
+														<div className="tabs-slider-tns-carousel-horizontal" data-tabs-slider-wrapper id="tns4">
+															<div className="tabs-slider-tns-slide-active" id="tns4-item0">
+																<div className="tabs-slider-tab-title-active" data-tab-item data-id="tab-Nya2_c">
+																	Всё для сада
+																</div>
+															</div>
+															<div className="tabs-slider-tns-slide-active" id="tns4-item1">
+																<div className="tabs-slider-tab-title" data-tab-item data-id="tab-NezAkb">
+																	Готовимся к лету
+																</div>
+															</div>
+															<div className="tabs-slider-tns-slide-active" id="tns4-item2">
+																<div className="tabs-slider-tab-title" data-tab-item data-id="tab-ru6Ht0">
+																	Отдых на природе
+																</div>
+															</div>
+															<div className="tabs-slider-tns-slide-active" id="tns4-item3">
+																<div className="tabs-slider-tab-title" data-tab-item data-id="tab-iSo4q9">
+																	Освещение для дома
+																</div>
+															</div>
+															<div className="tabs-slider-tns-slide-active" id="tns4-item4">
+																<div className="tabs-slider-tab-title" data-tab-item data-id="tab-z91oB">
+																	Для ремонта
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -310,9 +355,11 @@ function App() {
 
 							</div>
 						</div>
-						{/*<div className="homepage-top-grid-auth-right">*/}
+						<div className="homepage-top-grid-auth-right">
+							<div className="homepage-auth-homepage-auth-assembly">
 
-						{/*</div>*/}
+							</div>
+						</div>
 					</div>
 				</div>
 				<div className="homepage-stories-desktop">
