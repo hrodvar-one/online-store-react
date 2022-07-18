@@ -72,6 +72,9 @@ input:-ms-input-placeholder {
     z-index: 1001;
     background: rgb(246, 246, 246);
     transition: padding-top 0.1s ease 0s;
+    //position: -webkit-sticky;
+    //position: sticky;
+    //top:0;
 
     li {
       font-size: 14px;
@@ -242,6 +245,10 @@ input:-ms-input-placeholder {
       top: -52.8px;
       z-index: 1000;
       transition: background 0.2s ease-out 0s;
+
+      //position: -webkit-sticky;
+      //position: sticky;
+      //top:0;
 
       .header-search-container {
         width: 1200px;
@@ -1621,7 +1628,80 @@ input:-ms-input-placeholder {
           width: 100%;
 
           .homepage-auth-homepage-auth-profile {
+            text-align: left;
 
+            .homepage-auth-title {
+
+            }
+
+            @media (min-width: 992px) {
+              .homepage-auth-title {
+                background: linear-gradient(90deg,#333 60%,#fff 72%);
+                -webkit-background-clip: text;
+                color: transparent;
+                font-size: 18px;
+                margin-bottom: 8px;
+              }
+            }
+
+            .homepage-auth-description {
+
+            }
+
+            @media (min-width: 992px) {
+              .homepage-auth-description {
+                font-size: 14px;
+                margin-bottom: 8px;
+              }
+            }
+
+            .homepage-auth-links {
+
+              .homepage-auth-link-log {
+
+              }
+
+              @media (min-width: 992px) {
+                .homepage-auth-link-log {
+                  margin-right: 16px;
+                  color: rgb(13, 97, 175);
+
+                  &:hover {
+                    color: rgb(252, 88, 8);
+                    text-decoration: none;
+                    transition-duration: .3s;
+                    transition-property: color;
+                  }
+                }
+              }
+
+              .homepage-auth-link-sign {
+
+              }
+
+              @media (min-width: 992px) {
+                .homepage-auth-link-sign {
+                  margin: 0;
+                  color: rgb(13, 97, 175);
+
+                  &:hover {
+                    color: rgb(252, 88, 8);
+                    text-decoration: none;
+                    transition-duration: .3s;
+                    transition-property: color;
+                  }
+                }
+              }
+            }
+
+            @media (min-width: 992px) {
+              .homepage-auth-links {
+                bottom: 24px;
+                font-size: 14px;
+                left: 24px;
+                position: absolute;
+              }
+            }
           }
 
           @media (min-width: 992px) {
@@ -1666,7 +1746,80 @@ input:-ms-input-placeholder {
         .homepage-top-grid-auth-right {
 
           .homepage-auth-homepage-auth-assembly {
+            text-align: left;
 
+            .homepage-auth-title {
+
+            }
+
+            @media (min-width: 992px) {
+              .homepage-auth-title {
+                background: linear-gradient(90deg,#333 60%,#fff 72%);
+                -webkit-background-clip: text;
+                color: transparent;
+                font-size: 18px;
+                margin-bottom: 8px;
+              }
+            }
+
+            .homepage-auth-description {
+
+            }
+
+            @media (min-width: 992px) {
+              .homepage-auth-description {
+                font-size: 14px;
+                margin-bottom: 8px;
+              }
+            }
+
+            .homepage-auth-links {
+
+              .homepage-auth-link-rsu {
+
+              }
+
+              @media (min-width: 992px) {
+                .homepage-auth-link-rsu {
+                  margin-right: 16px;
+                  color: #0d61af;
+
+                  &:hover {
+                    color: rgb(252, 88, 8);
+                    text-decoration: none;
+                    transition-duration: .3s;
+                    transition-property: color;
+                  }
+                }
+              }
+
+              .homepage-auth-link-rsu-catalog {
+
+              }
+
+              @media (min-width: 992px) {
+                .homepage-auth-link-rsu-catalog {
+                  margin: 0;
+                  color: #0d61af;
+
+                  &:hover {
+                    color: rgb(252, 88, 8);
+                    text-decoration: none;
+                    transition-duration: .3s;
+                    transition-property: color;
+                  }
+                }
+              }
+            }
+
+            @media (min-width: 992px) {
+              .homepage-auth-links {
+                bottom: 24px;
+                font-size: 14px;
+                left: 24px;
+                position: absolute;
+              }
+            }
           }
 
           @media (min-width: 992px) {

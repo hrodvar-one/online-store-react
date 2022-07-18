@@ -352,12 +352,50 @@ function App() {
 						</div>
 						<div className="homepage-top-grid-auth-left">
 							<div className="homepage-auth-homepage-auth-profile">
-
+								<div className="homepage-auth-title">Привет!</div>
+								<div className="homepage-auth-description">
+									Получай бонусы и спецпредложения,
+									<br/>
+									сохраняй и отслеживай заказы
+								</div>
+								<div className="homepage-auth-links">
+									<a className="homepage-auth-link-log"
+									   href="/#"
+									   data-role="homepage-auth-login-button"
+									   data-redirect="https://profile.dns-shop.ru"
+									   rel="nofollow noopener">
+										Перейти в профиль
+									</a>
+									<a className="homepage-auth-link-sign"
+									   href="/#"
+									   data-role="homepage-auth-login-button"
+									   data-redirect="/profile/order/"
+									   rel="nofollow noopener">
+										Мои заказы
+									</a>
+								</div>
 							</div>
 						</div>
 						<div className="homepage-top-grid-auth-right">
 							<div className="homepage-auth-homepage-auth-assembly">
-
+								<div className="homepage-auth-title">Собери свой ПК</div>
+								<div className="homepage-auth-description">
+									Простой инструмент без проблем
+									<br/>
+									с совместимостью
+								</div>
+								<div className="homepage-auth-links">
+									<a className="homepage-auth-link-rsu"
+									   href="/configurator/"
+									   rel="nofollow noopener">
+										Собрать ПК
+									</a>
+									<a className="homepage-auth-link-rsu-catalog"
+									   href="/custompc/user-pc/"
+									   rel="nofollow noopener">
+										Сборки пользователей
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
