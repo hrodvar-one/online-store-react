@@ -787,8 +787,7 @@ input:-ms-input-placeholder {
               text-align: left;
 
               .ui-link-menu-desktop-root-title {
-                //font-size: 16px;
-                font-size: 14px;
+                font-size: 16px;
                 color: rgb(51, 51, 51);
                 text-decoration: none;
                 transition-duration: .3s;
@@ -1573,7 +1572,7 @@ input:-ms-input-placeholder {
               .homepage-actual-offers-main-container {
                 background-color: #fff;
                 border-radius: 8px;
-                box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0 / 16%);
+                box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16);
                 height: 214px;
                 padding: 24px;
               }
@@ -1708,7 +1707,7 @@ input:-ms-input-placeholder {
             .homepage-auth-homepage-auth-profile {
               background-color: rgb(255, 255, 255);
               border-radius: 8px;
-              box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0 / 16%);
+              box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16);
               height: 100%;
               min-height: 153px;
               padding: 24px;
@@ -1826,7 +1825,7 @@ input:-ms-input-placeholder {
             .homepage-auth-homepage-auth-assembly {
               background-color: rgb(255, 255, 255);
               border-radius: 8px;
-              box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0 / 16%);
+              box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16);
               height: 100%;
               min-height: 153px;
               padding: 24px;
@@ -1901,6 +1900,183 @@ input:-ms-input-placeholder {
         justify-content: space-between;
         width: 100%;
         margin: 0 auto;
+      }
+    }
+
+    .homepage-top-grid-banner {
+
+      .homepage-brands {
+
+        .tns-outer {
+          padding: 0 !important;
+
+          .tns-controls {
+
+            button {
+
+            }
+
+            @media (min-width: 992px) {
+              button {
+                background: rgb(255, 255, 255);
+                border-radius: 50%;
+                border-width: 0;
+                bottom: calc(50% - 27px);
+                box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 20%), inset 0 0 0 1px rgba(0, 0, 0, 10%);
+                cursor: pointer;
+                font-size: 21px;
+                height: 48px;
+                opacity: 0;
+                outline: none;
+                padding-top: 0.5rem;
+                position: absolute;
+                text-align: center;
+                transition: opacity .3s ease,transform .3s;
+                width: 48px;
+                z-index: 100;
+              }
+            }
+
+            button[data-controls=prev] {
+
+              .icon-arrow-left {
+
+                i {
+
+                }
+
+                @media (min-width: 992px) {
+                  i {
+
+                    &:before {
+                      content: "\e99a";
+                      speak: none;
+                      display: inline-block;
+                      font-family: i-icon!important;
+                      font-style: normal;
+                      font-variant: normal;
+                      font-weight: 400;
+                      line-height: 1;
+                      text-transform: none;
+                    }
+                  }
+                }
+              }
+
+              @media (min-width: 992px) {
+                .icon-arrow-left {
+                  cursor: pointer;
+                  font-size: 21px;
+                  text-align: center;
+                }
+              }
+            }
+
+            @media (min-width: 992px) {
+              button[data-controls=prev] {
+                left: 0.5rem;
+                padding-bottom: 5px;
+                right: auto;
+                transform: translateX(-10px) translateY(calc(20px - 50%));
+              }
+            }
+
+            .button[data-controls=next] {
+
+              .icon-arrow-right {
+
+                i {
+
+                }
+
+                @media (min-width: 992px) {
+                  i {
+
+                    &:before {
+                      content: "\e99b";
+                      speak: none;
+                      display: inline-block;
+                      font-family: i-icon!important;
+                      font-style: normal;
+                      font-variant: normal;
+                      font-weight: 400;
+                      line-height: 1;
+                      text-transform: none;
+                    }
+                  }
+                }
+              }
+
+              @media (min-width: 992px) {
+                .icon-arrow-right {
+                  cursor: pointer;
+                  font-size: 21px;
+                  text-align: center;
+                }
+              }
+            }
+
+            @media (min-width: 992px) {
+              .button[data-controls=next] {
+                left: auto;
+                padding-bottom: 5px;
+                right: 0.5rem;
+                transform: translateX(10px) translateY(calc(20px - 50%));
+              }
+            }
+          }
+
+          .tns-liveregion-hidden {
+            position: absolute;
+            left: -10000em;
+          }
+
+          #tns1-mw {
+
+          }
+
+          .tns-ovh {
+            overflow: hidden;
+
+            #tns1-iw {
+              margin: 0px -8px 0px 0px;
+            }
+
+            .tns-inner {
+
+              #tns1 {
+                font-size: 0;
+              }
+
+              .homepage-brands-slider-horizontal {
+                transition-duration: 0s;
+                transform: translate3d(0px, 0px, 0px);
+
+
+              }
+            }
+          }
+        }
+      }
+
+      @media (min-width: 992px) {
+        .homepage-brands {
+          height: 100px;
+          min-height: inherit;
+          overflow: hidden;
+          padding: 0;
+          position: relative;
+          margin-bottom: 48px;
+          display: block;
+        }
+      }
+    }
+
+    @media (min-width: 992px) {
+      .homepage-top-grid-banner {
+        display: block;
+        margin-bottom: 32px;
+        margin-top: -24px;
       }
     }
 
