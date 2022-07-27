@@ -402,7 +402,7 @@ function App() {
 				</div>
 				<div className="homepage-top-grid-banner">
 					<div className="homepage-brands">
-						<div className="tns-outer" id="tns2-ow">
+						<div className="tns-outer" id="tns1-ow">
 							<div className="tns-controls" aria-label="Carousel Navigation" tabIndex="0">
 								<button type="button" data-controls="prev" tabIndex="-1" aria-controls="tns2" disabled>
 									<div className="icon-arrow-left">
@@ -423,7 +423,20 @@ function App() {
 							<div id="tns1-mw" className="tns-ovh">
 								<div className="tns-inner" id="tns1-iw">
 									<div className="homepage-brands-slider-horizontal" data-role="brands-slider" id="tns1">
-										<div></div>
+										<div className="homepage-brands-tns-slide-active" id="tns1-item0">
+											<div className="homepage-brands-item-content-wrapper">
+												<a href="/brand/dexp/" className="homepage-brands-item-content">
+													<img src="/icons/brands/dexp.png" className="tns-complete-loading" data-was-processed="true" alt="description"/>
+												</a>
+											</div>
+										</div>
+										<div className="homepage-brands-tns-slide-active" id="tns1-item1">
+											<div className="homepage-brands-item-content-wrapper">
+												<a href="/brand/samsung/" className="homepage-brands-item-content">
+													<img src="/icons/brands/samsung.png" className="tns-complete-loading" data-was-processed="true" alt="description"/>
+												</a>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
